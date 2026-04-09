@@ -5,26 +5,47 @@ body {
   color: #333;
 }
 
+/* HEADER */
 header {
-  background: #4CAF50;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECCIONES */
 section {
-  padding: 20px;
+  padding: 30px 20px;
   max-width: 800px;
   margin: auto;
 }
 
+/* TARJETAS */
 .proyecto {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
 
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+/* BOTONES */
 a {
   display: inline-block;
   margin-top: 10px;
@@ -33,4 +54,36 @@ a {
   background: #4CAF50;
   padding: 8px 12px;
   border-radius: 5px;
+}
+
+a:hover {
+  background: #388e3c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.linkedin {
+  background: #0077b5;
+  margin-top: 10px;
+}
+
+.linkedin:hover {
+  background: #005582;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  margin: 0 10px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+}
+
+.social a:hover {
+  opacity: 0.7;
 }
